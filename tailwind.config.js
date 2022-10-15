@@ -5,7 +5,14 @@ module.exports = {
     './components/**/*.{js,ts,jsx,tsx}'
   ],
   theme: {
-    extend: {}
+    extend: {
+      screens: {
+        smm: { max: '639px' }
+      },
+      backgroundImage: {
+        'hero-pattern': "url('/public/hero-pattern.png')"
+      }
+    }
   },
   plugins: []
 }
