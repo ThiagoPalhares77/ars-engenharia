@@ -2,6 +2,7 @@ import Head from 'next/head'
 
 import React from 'react'
 import { Hero } from '../components/Hero'
+import { Services } from '../components/Services'
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
           'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse fugit, dolorem officiis dolore quae ad inventore voluptate, sed facilis, beatae sunt consequuntur? Animi voluptatibus ducimus, debitis eaque magnam libero modi?'
         }
       />
+      <Services />
     </div>
   )
 }
