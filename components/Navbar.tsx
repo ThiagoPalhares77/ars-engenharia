@@ -1,8 +1,8 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
+import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai'
 import LogoARS from '../public/LogoARS.png'
-import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
 
 export const Navbar = () => {
   const [nav, setNav] = useState(false)
@@ -30,7 +30,7 @@ export const Navbar = () => {
     <div className="fixed bg-white left-0 right-0 w-full z-10">
       <div className="max-w-[1240px] m-auto flex justify-between items-center px-4  ">
         <div className="py-1">
-          <Image src={LogoARS} width={220} height={80} />
+          <Image src={LogoARS} width={220} height={80} alt="" />
         </div>
         <ul className="hidden sm:flex ">
           <li className="p-4 ">
