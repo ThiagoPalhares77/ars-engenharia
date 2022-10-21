@@ -21,11 +21,8 @@ export default function Home() {
       />
 
       <div className='mt-10 max-w-7xl mx-auto'>
-
         <h1 id="Services" className='mb-6 flex justify-center text-3xl font-bold text-[#18475D]'>Nossos Serviços</h1>
-
         <OurJobs />
-
       </div>
 
 

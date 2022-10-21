@@ -1,33 +1,18 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai'
 import LogoARS from '../public/LogoARS.png'
 
 export const Navbar = () => {
   const [nav, setNav] = useState(false)
-  const [color, setColor] = useState('transparent')
-  const [textColor, setTextColor] = useState('white')
 
   const handleNav = () => {
     setNav(!nav)
   }
 
-  useEffect(() => {
-    const changeColor = () => {
-      if (window.scrollY >= 90) {
-        setColor('#FFF')
-        setTextColor('#000')
-      } else {
-        setColor('transparent')
-        setTextColor('#fff')
-      }
-    }
-    window.addEventListener('scroll', changeColor)
-  }, [])
-
   return (
-    <div className="fixed bg-white left-0 right-0 w-full z-10">
+    <div className="fixed top-0 bg-white w-full z-10">
       <div className="max-w-[1240px] m-auto flex justify-between items-center px-4  ">
         <div className="py-1">
           <Image src={LogoARS} width={220} height={80} alt="" />
