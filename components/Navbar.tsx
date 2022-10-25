@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai'
 import LogoARS from '../public/LogoARS.png'
 
@@ -12,7 +12,7 @@ export const Navbar = () => {
   }
 
   return (
-    <div className="fixed top-0 bg-white w-full z-10">
+    <div className="fixed top-0 right-0 left-0 bg-white w-full z-10">
       <div className="max-w-[1240px] m-auto flex justify-between items-center px-4  ">
         <div className="py-1">
           <Image src={LogoARS} width={220} height={80} alt="" />
@@ -25,10 +25,10 @@ export const Navbar = () => {
             <Link href={'/#Services'}>Serviços</Link>
           </li>
           <li className="p-4">
-            <Link href={'/'}>Clientes</Link>
+            <Link href={'/#Clients'}>Clientes</Link>
           </li>
           <li className="p-4">
-            <Link href={'/'}>Contato</Link>
+            <Link href={'/'}>Entre em contato</Link>
           </li>
         </ul>
 
@@ -54,13 +54,13 @@ export const Navbar = () => {
               <Link href={'/'}>Home</Link>
             </li>
             <li onClick={handleNav} className="p-4 text-4xl text-white">
-              <Link href={'/'}>Serviços</Link>
+              <Link href={'/#Services'}>Serviços</Link>
             </li>
             <li onClick={handleNav} className="p-4 text-4xl text-white">
               <Link href={'/'}>Clientes</Link>
             </li>
             <li onClick={handleNav} className="p-4 text-4xl text-white">
-              <Link href={'/'}>Contatos</Link>
+              <Link href={'/'}>Entre em contato</Link>
             </li>
           </ul>
         </div>

@@ -1,10 +1,10 @@
 import Head from 'next/head'
-
+import { Clients } from '../components/Clients'
 import { Hero } from '../components/Hero'
+import { OtherJobs } from '../components/OtherJobs'
 import { OurJobs } from '../components/OurJobs'
 
 export default function Home() {
-
   return (
     <div>
       <Head>
@@ -20,15 +20,14 @@ export default function Home() {
         }
       />
 
-      <div className='mt-10 max-w-7xl mx-auto'>
-        <h1 id="Services" className='mb-6 flex justify-center text-3xl font-bold text-[#18475D]'>Nossos Serviços</h1>
+      <div id="Services" className="pt-24 max-w-7xl mx-auto">
+        <h1 className="mb-6 flex justify-center text-3xl font-bold text-[#18475D]">
+          Nossos Serviços
+        </h1>
         <OurJobs />
       </div>
-
-
-      <div>
-        Ola
-      </div>
+      <OtherJobs />
+      <Clients />
     </div>
   )
 }
