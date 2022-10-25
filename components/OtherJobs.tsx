@@ -3,8 +3,8 @@ import { AiFillCheckCircle } from 'react-icons/ai'
 
 export const OtherJobs = () => {
   return (
-    <div className="bg-[#18475d] text-white">
-      <h1 className="text-3xl font-bold pt-10 text-center mt-10">
+    <div className="bg-[#18475d] py-10 mt-10 text-white">
+      <h1 className="text-3xl font-bold  text-center ">
         Demais áreas de atuação:
       </h1>
       <ul className="flex sm:justify-around sm:flex-row flex-col pl-3 pt-5 ">
