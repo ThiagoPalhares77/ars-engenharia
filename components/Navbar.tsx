@@ -28,7 +28,7 @@ export const Navbar = () => {
             <Link href={'/#Clients'}>Clientes</Link>
           </li>
           <li className="p-4">
-            <Link href={'/'}>Entre em contato</Link>
+            <Link href={'/#Contact'}>Entre em contato</Link>
           </li>
         </ul>
 
@@ -57,10 +57,10 @@ export const Navbar = () => {
               <Link href={'/#Services'}>Serviços</Link>
             </li>
             <li onClick={handleNav} className="p-4 text-4xl text-white">
-              <Link href={'/'}>Clientes</Link>
+              <Link href={'/#Clients'}>Clientes</Link>
             </li>
             <li onClick={handleNav} className="p-4 text-4xl text-white">
-              <Link href={'/'}>Entre em contato</Link>
+              <Link href={'/#Contact'}>Entre em contato</Link>
             </li>
           </ul>
         </div>

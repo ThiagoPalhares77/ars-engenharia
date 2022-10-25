@@ -4,7 +4,7 @@ import LogoExemple from '/public/ClientsLogo/logoexemple.png'
 
 export const Clients = () => {
   return (
-    <div id="Clients" className="my-10">
+    <div id="Clients" className=" pt-24">
       <h1 className="mb-10 text-center text-3xl font-bold text-[#18475D]">
         Alguns Clientes:
       </h1>

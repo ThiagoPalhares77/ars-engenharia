@@ -2,9 +2,9 @@ import React from 'react'
 
 export const Contact = () => {
   return (
-    <div className=" m-auto p-4 h-screen">
+    <div id="Contact" className=" p-4  pt-24 ">
       <h1 className="text-3xl font-bold text-[#18475D] text-center p-4">
-        Entre em contato com a gente
+        Entre em contato com a gente:
       </h1>
       <form className="max-w-[600px] m-auto">
         <div className="grid grid-cols-2 gap-2">

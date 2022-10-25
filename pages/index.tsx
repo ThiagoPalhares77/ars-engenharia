@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import { Clients } from '../components/Clients'
 import { Contact } from '../components/Contact'
+import { Footer } from '../components/Footer'
 import { Hero } from '../components/Hero'
 import { OtherJobs } from '../components/OtherJobs'
 import { OurJobs } from '../components/OurJobs'
@@ -30,6 +31,8 @@ export default function Home() {
       <OtherJobs />
       <Clients />
       <Contact />
+
+      <Footer />
     </div>
   )
 }
