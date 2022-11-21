@@ -10,22 +10,22 @@ export const Clients = () => {
       </h1>
       <ul className="grid md:grid-cols-6 sm:grid-cols-3 grid-cols-2 mx-10">
         <li>
-          <Image src={LogoExemple} />
+          <Image src={LogoExemple} alt={''} />
         </li>
         <li>
-          <Image src={LogoExemple} />
+          <Image src={LogoExemple} alt={''} />
         </li>
         <li>
-          <Image src={LogoExemple} />
+          <Image src={LogoExemple} alt={''} />
         </li>
         <li>
-          <Image src={LogoExemple} />
+          <Image src={LogoExemple} alt={''} />
         </li>
         <li>
-          <Image src={LogoExemple} />
+          <Image src={LogoExemple} alt={''} />
         </li>
         <li>
-          <Image src={LogoExemple} />
+          <Image src={LogoExemple} alt={''} />
         </li>
       </ul>
     </div>
