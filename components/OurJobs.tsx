@@ -45,10 +45,10 @@ export function OurJobs() {
                 <div className="rounded-lg overflow-hidden">
                   <Image width={350} height={200} src={item.image1} alt="" />
                 </div>
-                <h1 className="mt-3 text-xl w-[350px]">{item.title}</h1>
-                {/* <span className=" w-[350px] h-12">
-                  {reduceText(item.description)}
-                </span> */}
+                <div className="w-[350px] h-[80px] flex items-center justify-center">
+                  <h1 className="mt-3 text-xl">{item.title}</h1>
+                </div>
+
                 <div className="rounded-md px-16 mt-3 py-3 bg-[#18475D] w-fit text-white hover:bg-[#569DB2] mb-8 cursor-pointer mx-auto">
                   <Link href={`servicos/${item.title.toLocaleLowerCase()}`}>
                     Saiba mais

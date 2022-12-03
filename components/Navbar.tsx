@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai'
 import LogoARS from '../public/LogoARS.png'
 
@@ -13,7 +13,7 @@ export const Navbar = () => {
 
   return (
     <div className="fixed top-0 right-0 left-0 bg-white w-full z-10">
-      <div className="max-w-[1240px] m-auto flex justify-between items-center px-4  ">
+      <div className="max-w-[1240px] m-auto flex justify-between items-center px-4">
         <div className="py-1">
           <Image src={LogoARS} width={220} height={80} alt="" />
         </div>
