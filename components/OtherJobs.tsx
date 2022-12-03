@@ -1,13 +1,35 @@
 import React from 'react'
+import { motion, Variants } from 'framer-motion'
 import { AiFillCheckCircle } from 'react-icons/ai'
 
 export const OtherJobs = () => {
+  const cardVariants: Variants = {
+    offscreen: {
+      y: 300
+    },
+    onscreen: {
+      y: 50,
+      transition: {
+        type: 'spring',
+        bounce: 0.4,
+        duration: 0.8
+      }
+    }
+  }
   return (
-    <div className="bg-[#18475d] py-10 mt-10 text-white">
+    <motion.div
+      className="bg-[#18475d] py-20 mt-10 text-white"
+      initial="offscreen"
+      whileInView="onscreen"
+      viewport={{ once: true, amount: 0.8 }}
+    >
       <h1 className="text-3xl font-bold  text-center ">
         Demais áreas de atuação:
       </h1>
-      <ul className="flex sm:justify-around sm:flex-row flex-col pl-3 pt-5 ">
+      <motion.ul
+        className="flex sm:justify-around sm:flex-row flex-col pl-3 pt-5"
+        variants={cardVariants}
+      >
         <div>
           <li className="flex gap-3 items-center mb-4">
             <span>
@@ -74,7 +96,7 @@ export const OtherJobs = () => {
             <span className="text-xl">Serviços de engenharia em geral</span>
           </li>
         </div>
-      </ul>
-    </div>
+      </motion.ul>
+    </motion.div>
   )
 }
