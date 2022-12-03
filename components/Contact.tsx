@@ -1,4 +1,9 @@
+import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
+import Whatsapp from '../public/MediaIcons/whatsapp.png'
+import Instagram from '../public/MediaIcons/instagram.png'
+import Email from '../public/MediaIcons/email.png'
 
 export const Contact = () => {
   return (
@@ -35,6 +40,28 @@ export const Contact = () => {
         <button className="border shadow-lg p-3 w-full mt-2 hover:bg-[#5c9ab2] hover:text-white transition-500">
           Enviar
         </button>
+        <div>
+          <h2 className="text-xl font-bold text-[#18475D] text-center p-4">
+            Ou entre em contato por nossas redes socias:
+          </h2>
+          <div className="flex gap-3 items-center justify-center">
+            <Link href="/">
+              <a>
+                <Image src={Whatsapp} alt="Whatsapp Logo" />
+              </a>
+            </Link>
+            <Link href="/">
+              <a>
+                <Image src={Instagram} alt="Whatsapp Logo" />
+              </a>
+            </Link>
+            <Link href="/">
+              <a>
+                <Image src={Email} alt="Whatsapp Logo" />
+              </a>
+            </Link>
+          </div>
+        </div>
       </form>
     </div>
   )
