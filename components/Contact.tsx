@@ -47,17 +47,22 @@ export const Contact = () => {
           <div className="flex gap-3 items-center justify-center">
             <Link href="/">
               <a>
-                <Image src={Whatsapp} alt="Whatsapp Logo" />
+                <Image
+                  src={Whatsapp}
+                  height="53"
+                  width="53"
+                  alt="Whatsapp Logo"
+                />
               </a>
             </Link>
             <Link href="/">
               <a>
-                <Image src={Instagram} alt="Whatsapp Logo" />
+                <Image src={Instagram} alt="Instagram Logo" />
               </a>
             </Link>
             <Link href="/">
               <a>
-                <Image src={Email} alt="Whatsapp Logo" />
+                <Image src={Email} height="55" width="55" alt="Email Logo" />
               </a>
             </Link>
           </div>

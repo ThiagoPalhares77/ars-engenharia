@@ -18,13 +18,8 @@ export default function Service() {
       {service !== undefined && (
         <div className="my-28 md:mx-20">
           <section className="grid md:grid-cols-2 grid-row">
-            <div className="border-solid border-2 border-[#5c9ab2] h-[352px] w-[502px] hover:scale-105 duration-500 ease-in-out">
-              <Image
-                height={350}
-                width={500}
-                src={service.image2}
-                alt={service.title}
-              />
+            <div className="border-solid border-2 border-[#5c9ab2] md:h-[350px] md:w-[500px] h-[200px] w-[350px] hover:scale-105 duration-500 ease-in-out relative">
+              <Image layout="fill" src={service.image2} alt={service.title} />
             </div>
             <div>
               <h1 className="text-3xl font-bold text-[#18475D] text-center p-4">
@@ -110,13 +105,8 @@ export default function Service() {
                 </ul>
               </div>
             </div>
-            <div className="border-solid border-2 border-[#5c9ab2] h-[352px] w-[502px] hover:scale-105 duration-500 ease-in-out">
-              <Image
-                height={350}
-                width={500}
-                src={service.image3}
-                alt={service.title}
-              />
+            <div className="border-solid border-2 border-[#5c9ab2] md:h-[350px] md:w-[500px] h-[200px] w-[350px] hover:scale-105 duration-500 ease-in-out relative">
+              <Image layout="fill" src={service.image3} alt={service.title} />
             </div>
           </section>
         </div>
