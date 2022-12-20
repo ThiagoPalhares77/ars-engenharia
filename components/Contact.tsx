@@ -5,6 +5,7 @@ import React, { useState } from 'react'
 import Whatsapp from '../public/MediaIcons/whatsapp.png'
 import Instagram from '../public/MediaIcons/instagram.png'
 import Email from '../public/MediaIcons/email.png'
+import { sendContactForm } from '../lib/api'
 
 export const Contact = () => {
   const [fields, setFields] = useState({
@@ -18,9 +19,14 @@ export const Contact = () => {
     setFields(fields)
   }
 
-  function handleFormSubmit(event) {
+  async function handleFormSubmit(event) {
     event.preventDefault()
-    console.log(fields)
+    try {
+      await sendContactForm(fields)
+      alert('Mensagem enviada com sucesso')
+    }catch {
+      alert('Erro ao enviar a mensagem')
+    }
   }
 
   return (

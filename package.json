@@ -3,14 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next start",
+    "dev": "next dev",
     "build": "next build",
-    "start": "node server.js",
+    "start": "node start",
     "lint": "next lint"
   },
   "dependencies": {
+    "@types/nodemailer": "^6.4.7",
     "cors": "^2.8.5",
-    "express": "^4.18.2",
     "framer-motion": "^7.6.18",
     "multer": "^1.4.5-lts.1",
     "next": "12.3.1",
@@ -26,7 +26,6 @@
     "autoprefixer": "^10.4.12",
     "eslint": "8.25.0",
     "eslint-config-next": "12.3.1",
-    "nodemon": "^2.0.20",
     "postcss": "^8.4.18",
     "tailwind-scrollbar": "^2.1.0-preview.0",
     "tailwindcss": "^3.1.8"
