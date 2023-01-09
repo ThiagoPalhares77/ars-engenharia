@@ -5,10 +5,10 @@ import { AiFillCheckCircle } from 'react-icons/ai'
 export const OtherJobs = () => {
   const cardVariants: Variants = {
     offscreen: {
-      y: 300
+      x: 700
     },
     onscreen: {
-      y: 50,
+      x: 0,
       transition: {
         type: 'spring',
         bounce: 0.4,

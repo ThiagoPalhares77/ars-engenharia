@@ -17,9 +17,9 @@ export default function Service() {
     <>
       {service !== undefined && (
         <div className="my-28 md:mx-20 mx-2">
-          <section className="grid xl:grid-cols-2 grid-row">
+          <section className="grid lg:grid-cols-2 grid-row">
             <div className="flex items-center justify-center">
-              <div className="border-solid border-2 border-[#5c9ab2] md:h-[350px] md:w-[500px] h-[200px] w-[350px] hover:scale-105 duration-500 ease-in-out relative">
+              <div className="border-solid border-2 border-[#5c9ab2] lg:h-[350px] lg:w-[500px] md:h-[200px] md:w-[350px] h-[150px] w-[300px] hover:scale-105 duration-500 ease-in-out relative">
                 <Image layout="fill" src={service.image2} alt={service.title} />
               </div>
             </div>
@@ -37,7 +37,7 @@ export default function Service() {
               </Link>
             </div>
           </section>
-          <section className="grid xl:grid-cols-2 grid-row mt-10 gap-3">
+          <section className="grid lg:grid-cols-2 grid-row mt-10 gap-3">
             <div>
               {service.importance && (
                 <>
@@ -108,8 +108,20 @@ export default function Service() {
               </div>
             </div>
             <div className="flex items-center justify-center">
-              <div className="border-solid border-2 border-[#5c9ab2] md:h-[350px] md:w-[500px] h-[200px] w-[350px] hover:scale-105 duration-500 ease-in-out relative">
-                <Image layout="fill" src={service.image3} alt={service.title} />
+              <div className="border-solid border-2 border-[#5c9ab2] lg:h-[350px] lg:w-[500px] md:h-[200px] md:w-[350px] h-[150px] w-[300px] hover:scale-105 duration-500 ease-in-out relative">
+                {service.image3 ? (
+                  <Image
+                    layout="fill"
+                    src={service.image3}
+                    alt={service.title}
+                  />
+                ) : (
+                  <Image
+                    layout="fill"
+                    src={service.image1}
+                    alt={service.title}
+                  />
+                )}
               </div>
             </div>
           </section>

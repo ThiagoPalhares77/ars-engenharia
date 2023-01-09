@@ -2,7 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React, { useState } from 'react'
 
-import Whatsapp from '../public/MediaIcons/whatsapp.png'
+import Whatsapp from '../public/MediaIcons/whatsapp-msg.png'
 import Instagram from '../public/MediaIcons/instagram.png'
 import Email from '../public/MediaIcons/email.png'
 import { sendContactForm } from '../lib/api'
@@ -24,7 +24,7 @@ export const Contact = () => {
     try {
       await sendContactForm(fields)
       alert('Mensagem enviada com sucesso')
-    }catch {
+    } catch {
       alert('Erro ao enviar a mensagem')
     }
   }
@@ -73,32 +73,26 @@ export const Contact = () => {
         <button className="border shadow-lg p-3 w-full mt-2 hover:bg-[#5c9ab2] hover:text-white transition-500">
           Enviar
         </button>
+        <div className="flex items-center justify-center">
+          <h2 className="text-xl font-bold text-[#18475D] text-center p-4">
+            Ou pelo Whatsapp:
+          </h2>
+
+          <Link href="/">
+            <a>
+              <Image
+                src={Whatsapp}
+                height="199"
+                width="398"
+                alt="Whatsapp Logo"
+              />
+            </a>
+          </Link>
+        </div>
         <div>
           <h2 className="text-xl font-bold text-[#18475D] text-center p-4">
-            Ou entre em contato por nossas redes socias:
+            Telefone para contato: (31)99999-9999
           </h2>
-          <div className="flex gap-3 items-center justify-center">
-            <Link href="/">
-              <a>
-                <Image
-                  src={Whatsapp}
-                  height="53"
-                  width="53"
-                  alt="Whatsapp Logo"
-                />
-              </a>
-            </Link>
-            <Link href="/">
-              <a>
-                <Image src={Instagram} alt="Instagram Logo" />
-              </a>
-            </Link>
-            <Link href="/">
-              <a>
-                <Image src={Email} height="55" width="55" alt="Email Logo" />
-              </a>
-            </Link>
-          </div>
         </div>
       </form>
     </div>

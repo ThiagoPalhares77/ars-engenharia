@@ -11,7 +11,7 @@ export const Footer = () => {
         </div>
         <div className="text-white flex items-center">
           <p className="text-sm flex sm:flex-row flex-col">
-            <span>ARS Soluções Engenharia 2022 - &nbsp;</span>
+            <span>ARS Soluções Engenharia 2023 - &nbsp;</span>
             <span> Todos os direitos reservados </span>
           </p>
         </div>

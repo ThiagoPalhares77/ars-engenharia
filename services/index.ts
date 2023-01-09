@@ -3,7 +3,6 @@ import NR12_2 from '../public/NR12/19.jpg'
 import NR12_3 from '../public/NR12/nr12.png'
 import NR11_1 from '../public/NR11/nr11.png'
 import NR11_2 from '../public/NR11/6.jpg'
-import NR11_3 from '../public/NR11/nr11.png'
 import EM_1 from '../public/EstruturaMetálica/1.jpg'
 import EM_2 from '../public/EstruturaMetálica/2.jpg'
 import EM_3 from '../public/EstruturaMetálica/4.jpg'
@@ -15,13 +14,10 @@ import AVCB_2 from '../public/AVCB/30.jpg'
 import AVCB_3 from '../public/AVCB/15.jpg'
 import CO_1 from '../public/Cozinhas/01.png'
 import CO_2 from '../public/Cozinhas/02.png'
-import CO_3 from '../public/Cozinhas/01.png'
 import DE_1 from '../public/desmanche/02.jpg'
 import DE_2 from '../public/desmanche/01.png'
-import DE_3 from '../public/desmanche/02.jpg'
 import LA_1 from '../public/LaudoTecnico/8.jpg'
 import LA_2 from '../public/LaudoTecnico/5.jpg'
-import LA_3 from '../public/LaudoTecnico/8.jpg'
 import PP_1 from '../public/Playground/9.jpg'
 import PP_2 from '../public/Playground/10.jpg'
 import PP_3 from '../public/Playground/11.jpg'
@@ -38,7 +34,6 @@ export const ourServices = [
   {
     image1:NR11_1,
     image2:NR11_2,
-    image3:NR11_3,
     title: 'NR11 Sistema Transportador',
     description: 'A NR-11 promove a melhoria sistemática da segurança do trabalho nas operações de movimentação, transporte e armazenagem de cargas. Por exemplo: elevadores de carga, guindastes, pontes rolantes, empilhadeiras, esteiras transportadoras, armazéns, canteiros de obras, armazéns, centros de distribuição, etc. aplicam-se a esta norma. Sua adequação é importante para garantir que as empresas cumpram as regulamentações e previnam possíveis acidentes para os trabalhadores.',
     howCanIHelpYou: ['Laudo de integridade física;', 'Planos de manutenção', 'Inspeções periódicas', 'Mapeamento de riscos', 'Consultoria']
@@ -73,7 +68,6 @@ export const ourServices = [
   {
     image1:CO_1,
     image2:CO_2,
-    image3:CO_3,
     title: 'Sistemas de Exaustão de Cozinhas',
     description: 'A norma NBR 14518 estabelece os princípios gerais para projeto, instalação, operação e manutenção de sistemas de ventilação para cozinhas profissionais, com ênfase na segurança contra incêndio e no controle ambiental.',
     howCanIHelpYou: ['Apreciação e redução de riscos', 'Laudos técnicos', 'Consultoria'],
@@ -82,7 +76,6 @@ export const ourServices = [
   {
     image1:DE_1,
     image2:DE_2,
-    image3:DE_3,
     title: 'Auto Peças Desmanche de Veículos',
     description: 'Você sabia que de acordo com o artigo 7 da resolução CONTRAN 611 de 24/05/2016, é necessário possuir um responsável técnico junto ao conselho regional de engenharia e agronomia-CREA para o exército de suas funções? O Engenheiro mecênico será responsável por selecionar as peças, e informar ao DETRAN quais peças estão aptas para o uso, quais peças vão pra manutenção e quais vão para descarte e aferirá a conformidade da estrutura e das atividades da empresa de desmontagem. Aos que desobedecerem à lei federal, a multa pode variar de R$ 2 mil a R$ 8 mil. Cada infração resulta em uma única multa, independente da quantidade de peças envolvidas. E a mesma infração no prazo de um ano dobra o valor da multa.',
     howCanIHelpYou: ['Documentação das peças', 'Responsabilidade técnica', 'Laudos técnicos', 'Consultoria'],
@@ -90,7 +83,6 @@ export const ourServices = [
   {
     image1:LA_1,
     image2:LA_2,
-    image3:LA_3,
     title: 'Laudo Técnico',
     description: 'O Laudo Técnico é um relatório montado por um especialista. Ele serve para fazer um diagnóstico geral de todo o serviço. O documento pode apresentar um diagnóstico, uma análise criteriosa, através de vistorias, avaliações. O laudo pode ser para inspecionar a integridade física de estruturas mecânica fixas ou móveis; para atestar se um equipamento, estrutura ou objeto estão em conformidade com as normas/leis;',
     howCanIHelpYou: ['Inspeção', 'Vistoria', 'Elaboração de Laudo Técnico', 'Apreciação e redução de risco', 'Responsabilidade técnica'],
